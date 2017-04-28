@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical">
+
+    <!-- This shows the user the reminder's option to be completed or finished -->
+    <CheckBox
+        android:id="@+id/reminder_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="deleteReminder"/>
+
+
+    <!-- This determines and shows the user each reminder's title -->
+    <TextView
+        android:id="@+id/reminder_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/reminder_delete"
+        android:textSize="20sp" />
+
+    <!-- This allows the user to edit the reminder's title -->
+    <Button
+        android:id="@+id/reminder_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Edit"
+        android:onClick="editReminder" />
+
+
+
+</RelativeLayout>
